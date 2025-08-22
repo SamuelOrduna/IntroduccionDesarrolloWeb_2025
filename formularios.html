@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning forms</title>
+  </head>
+  <body>
+    <h1>Complete profile</h1>
+    <form
+      method="get"
+      id="profile"
+      action="http://localhost:3000/submit-profile"
+      target="_blank"
+    >
+      <fieldset>
+        <legend>Photos and videos</legend>
+        <p>Choose the ones that show the best of you!</p>
+        <hr />
+        <label for="photo1">Photo 1:</label>
+        <input type="file" id="photo1" name="photo1" accept="image/*" />
+        <br /><br />
+
+        <label for="photo2">Photo 2:</label>
+        <input type="file" id="photo2" name="photo2" accept="image/*" />
+        <br /><br />
+
+        <label for="photo3">Photo 3:</label>
+        <input type="file" id="photo3" name="photo3" accept="image/*" />
+        <br /><br />
+
+        <p>Select your best photo:</p>
+        <input type="radio" id="best1" name="bestPhoto" value="photo1" />
+        <label for="best1">Photo 1</label>
+
+        <input type="radio" id="best2" name="bestPhoto" value="photo2" />
+        <label for="best2">Photo 2</label>
+
+        <input type="radio" id="best3" name="bestPhoto" value="photo3" />
+        <label for="best3">Photo 3</label>
+        <br /><br />
+
+        <label for="video">Upload a video:</label>
+        <input type="file" id="video" name="video" accept="video/*" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Interests</legend>
+        <p>Show the things you love</p>
+
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+        <br />
+
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sports">Sports</label>
+        <br />
+
+        <input type="checkbox" id="travel" name="interests" value="travel" />
+        <label for="travel">Travel</label>
+        <br />
+
+        <input type="checkbox" id="books" name="interests" value="books" />
+        <label for="books">Books</label>
+        <br />
+
+        <input type="checkbox" id="movies" name="interests" value="movies" />
+        <label for="movies">Movies</label>
+        <br />
+        <hr />
+      </fieldset>
+
+      <!-- Botón de envío -->
+      <button type="submit" id="submitButton">Save</button>
+    </form>
+  </body>
+</html>
